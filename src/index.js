@@ -30,3 +30,5 @@ app.post('/github', routes.index.github);
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Node-cd server listening on port " + app.get('port'));
 });
+
+//module.exports = app;
