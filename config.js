@@ -18,7 +18,17 @@ Private = {
 			'192.30.252.0/22'
 		]
 	},
-	action: {exec: "../node-cd.sh"}
+	repositories: {
+		"repository-name": {
+			secret: "a secret code to copy into the github webhook secret field",
+			"master": {
+				action: { exec: "./node-cd.sh" }
+			},
+			"another-branch": {
+				action: { exec: "pwd" }
+			}
+		}
+	}
 };
 
 module.exports = Private;
