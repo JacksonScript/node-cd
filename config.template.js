@@ -4,9 +4,9 @@ Private = {
 		authorizedIps:[
 			'127.0.0.1',
 			'localhost',
-      // Bitbucket IPs
-      // 131.103.20.165,
-      // 131.103.20.166
+			// Bitbucket IPs
+			// 131.103.20.165,
+			// 131.103.20.166
 			// Github's IPs
 			// '207.97.227.253',
 			// '50.57.128.197',
@@ -20,6 +20,7 @@ Private = {
 	},
 	repositories: {
 		"repository-name": {
+			// sorry, you can't name a branch secret :(
 			secret: "a secret code to copy into the github webhook secret field",
 			"master": {
 				action: { exec: "./node-cd.sh" }
